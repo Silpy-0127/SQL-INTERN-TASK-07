@@ -1,31 +1,30 @@
 # SQL-INTERN-TASK-07
 
----
+# 📁 SQL View Definitions – E-commerce Database
 
-## 📝 Interview Questions Covered
-- ✅ What is a view?  
-- ✅ Can views be updated?  
-- ✅ What is a materialized view?  
-- ✅ View vs Table?  
-- ✅ Why and how to use views?  
-- ✅ Can we create indexed views?  
-- ✅ How to secure data using views?  
-- ✅ What are limitations of views?  
-- ✅ How does `WITH CHECK OPTION` work?
+This repository contains a collection of SQL views designed for an e-commerce database system. These views support analytical reporting, stock monitoring, and customer behavior analysis.
 
----
+## 📄 Overview
 
-## 🚀 Submission  
-Create a GitHub repo with all the above contents and submit the link through the [submission form](https://forms.gle/8Gm83s53KbyXs3Ne9).
+The `Schema7.sql` file includes SQL statements to:
 
----
+- Drop existing views (if any)
+- Create new views based on core relational tables like `Customers`, `Orders`, `Products`, `Inventory`, `Payments`, and `Sellers`
 
-## 📚 Notes  
-- Debug errors independently as much as possible  
-- No paid tools should be used  
-- Research is allowed during the task  
+## 🧩 Views Description
 
----
+| View Name              | Description                                                                 |
+|------------------------|-----------------------------------------------------------------------------|
+| `ActiveCustomers`      | Customers with more than one order                                          |
+| `ProductSalesView`     | Aggregated total quantity and sales per product                             |
+| `DeliveredOrders`      | Delivered orders with customer and payment details                          |
+| `LowStockProducts`     | Products with less than 50 units available in inventory                     |
+| `SellersWithInventory` | Sellers along with the count of distinct products they have in stock        |
 
-> ✅ **Goal:** Understand and demonstrate reusable SQL logic using views.
+## 🛠️ Setup & Execution
+
+1. Ensure your SQL environment is ready (e.g., PostgreSQL, MySQL).
+2. Open the SQL editor (like pgAdmin or MySQL Workbench).
+3. R
+
 
